@@ -2,3 +2,4 @@ FROM stirlingtools/stirling-pdf:latest
    USER root
    COPY fonts/ /usr/share/fonts/custom/
    RUN fc-cache -f
+   RUN apk add --no-cache libreoffice-math
